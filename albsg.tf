@@ -1,6 +1,6 @@
 resource "aws_security_group" "alb-sg" {
   name   = "my-alb-sg"
-  vpc_id = "vpc-0ce85cf4afc3b65fe"
+  vpc_id = "<vpc-id>"
 
   ingress  {
     from_port=80
