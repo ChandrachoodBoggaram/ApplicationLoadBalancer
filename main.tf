@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "SG-1" {
-  vpc_id = "vpc-0ce85cf4afc3b65fe"
+  vpc_id = "<vpc_id>"
 
   ingress  {
     from_port=22
@@ -47,7 +47,7 @@ resource "aws_instance" "EC2-1" {
   ami="ami-0069d66985b09d219"
   instance_type = "t2.micro"
   key_name = "chandu1"
-  subnet_id = "subnet-0fba361078f7feac1"
+  subnet_id = "<private subnet id>"
   vpc_security_group_ids = [aws_security_group.SG-1.id]
   user_data = <<-EOF
     #! /bin/bash
