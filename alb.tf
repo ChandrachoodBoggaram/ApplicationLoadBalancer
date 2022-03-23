@@ -3,7 +3,7 @@ resource "aws_lb" "my-test-lb" {
   internal           = false
   load_balancer_type = "application"
   ip_address_type    = "ipv4"
-  subnets            = ["subnet-08385993be0328eda","subnet-07a2908e451a29834"]
+  subnets            = ["<public_subnet_id1>","<public_subnet_id2>"]
   enable_deletion_protection = false
 tags ={
     "Name"="alb"
