@@ -11,7 +11,7 @@ resource "aws_lb_target_group" "TG-002" {
   name        = "TG-002"
   port        = 80
   protocol    = "HTTP"
-  vpc_id = "vpc-0ce85cf4afc3b65fe"
+  vpc_id = "<vpc_id>"
   target_type = "instance"
 }
 
